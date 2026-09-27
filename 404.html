@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        // Catch the Netlify link and add .html so GitHub can read it
+        var path = window.location.pathname;
+        if (!path.endsWith('.html') && !path.endsWith('/')) {
+            window.location.pathname = path + '.html';
+        } else {
+            // Fallback to home if it's completely lost
+            window.location.pathname = '/Sandystuartstudios/';
+        }
+    </script>
+</head>
+<body>
+    <p>Loading page...</p>
+</body>
+</html>
